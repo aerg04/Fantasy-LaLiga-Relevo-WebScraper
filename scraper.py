@@ -54,7 +54,7 @@ class Scraper:
     def getPlayersInfo(url:str):
         try:
             response = requests.get(url)
-            print(response)
+            
             soup = BeautifulSoup(response.content, 'html.parser')
             
             #quiero el nombre
